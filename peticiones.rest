@@ -1,4 +1,4 @@
-@host = http://localhost:3000
+@host = https://online-shop-rlbb.onrender.com
 
 GET {{host}}/api/products
 

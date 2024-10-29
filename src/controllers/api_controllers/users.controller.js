@@ -24,7 +24,7 @@ const login = async (req, res, next) => {
     if (!same) {
         return res.status(401).json({ message: ' Error en email y/o contraseña' });
     }
-    res.json({ message: 'Login correcto', token: createToken(user) });
+    res.json({ message: '¡¡¡Login correcto!!!', token: createToken(user) });
 }
 
 const addProductCart = async (req, res, next) => {
