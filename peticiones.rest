@@ -1,0 +1,61 @@
+@host = http://localhost:3000
+
+GET {{host}}/api/products
+
+
+###
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+    "name": "lapiz verde",
+    "description": "pinta en verde",
+    "department": "test",
+    "price": 14,
+    "stock": 200,
+    "available": true
+}
+
+###
+PUT {{host}}/api/products/<PRODUCTID>
+Content-Type: application/json
+
+###
+DELETE {{host}}/api/products/
+
+###
+GET {{host}}/api/products/671f6fc361a3762c610b296e
+
+###
+GET {{host}}/api/products/dpt/electronica
+
+###
+GET {{host}}/api/products/available
+
+###
+GET {{host}}/api/products/price?min=100&max=400
+
+###
+POST {{host}}/api/users/register
+Content-Type: application/json
+
+{
+    "username": "carlossss",
+    "email":"carlosssss@gmail.com",
+    "password": "987654"
+}
+
+###
+POST {{host}}/api/users/login
+Content-Type: application/json
+
+{
+    "email": "carlos@gmail.com",
+    "password": "987654"
+}
+
+###
+PUT {{host}}/api/users/add/
+
+###
+GET {{host}}/api/users/profile
